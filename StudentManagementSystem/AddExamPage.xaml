@@ -1,0 +1,12 @@
+﻿<Page x:Class="StudentManagementSystem.Pages.AddExamPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Add Exam">
+    <StackPanel>
+        <TextBox x:Name="DescriptionTextBox" Text="Description"/>
+        <TextBox x:Name="PlaceTextBox" Text="Place"/>
+        <TextBox x:Name="SeatsTextBox" Text="Seats" TextChanged="SeatsTextBox_TextChanged"/>
+        <DatePicker x:Name="ExamDatePicker"/>
+        <Button Content="Add Exam" Click="AddExam_Click"/>
+    </StackPanel>
+</Page>
