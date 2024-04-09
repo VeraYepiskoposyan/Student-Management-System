@@ -1,0 +1,16 @@
+﻿<Page x:Class="StudentManagementSystem.Pages.SetExamScoresPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Set Exam Scores">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Select Exam:"/>
+            <ListBox x:Name="ExamsListBox" SelectionMode="Single"/>
+            <TextBlock Text="Select Student:"/>
+            <ListBox x:Name="StudentsListBox" SelectionMode="Single"/>
+            <TextBlock Text="Enter Score:"/>
+            <TextBox x:Name="ScoreTextBox"/>
+            <Button Content="Save Score" Click="SaveScore_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

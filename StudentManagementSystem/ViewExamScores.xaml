@@ -1,0 +1,21 @@
+﻿<Page x:Class="StudentManagementSystem.Pages.ViewExamScores"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Home Page">
+    <Grid>
+        <!-- Other content on the home page -->
+        <DataGrid x:Name="ExamScoreDataGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Student Name" Binding="{Binding StudentName}" />
+                <DataGridTextColumn Header="Subject" Binding="{Binding Subject}" />
+                <DataGridTextColumn Header="Score" Binding="{Binding Score}" />
+                <DataGridTextColumn Header="Type" Binding="{Binding ScoreType}" />
+                <!-- Add more columns as needed -->
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>
+

@@ -1,0 +1,27 @@
+﻿<Page x:Class="StudentManagementSystem.Pages.ProfessorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Professor Page">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Grid.Row="0" Margin="10">
+            <TextBlock Text="Professor Information" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Text="{Binding ProfessorName}" Margin="0,5,0,0"/>
+            <TextBlock Text="{Binding ProfessorSurname}" Margin="0,5,0,0"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <Button Content="Add Exam" Click="AddExam_Click" Margin="0,0,0,5"/>
+            <Button Content="Put Exam Scores" Click="PutExamScores_Click" Margin="0,0,0,5"/>
+            <Button Content="Add Event" Click="AddEvent_Click" Margin="0,0,0,5"/>
+            <Button Content="Add Task" Click="AddTask_Click" Margin="0,0,0,5"/>
+        </StackPanel>
+    </Grid>
+</Page>
