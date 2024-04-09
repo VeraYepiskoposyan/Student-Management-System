@@ -1,8 +1,0 @@
-﻿<Window x:Class="StudentManagementSystem.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Student Management System" Height="450" Width="800">
-    <Grid>
-        <Frame x:Name="MainFrame"/>
-    </Grid>
-</Window>
